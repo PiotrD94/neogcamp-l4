@@ -24,7 +24,7 @@ function clickTranslate() {
     .then(response => response.json())
     .then(json => {
         var  translatedText = json.contents.translated;
-        txtoutput.innerText = translatedText + "Amazing, isn't it?"
+        txtoutput.innerText = translatedText + "\nAmazing, isn't it?"
     })
     .catch(errorHandler)
 }
